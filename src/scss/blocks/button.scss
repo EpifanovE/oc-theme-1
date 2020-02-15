@@ -1,0 +1,206 @@
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: left .3s ease-in-out;
+    z-index: 1;
+  }
+
+  &_link:before {
+    content: none;
+  }
+
+  &:hover {
+    &:before {
+      left: 0;
+    }
+  }
+
+  &_accent {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    color: $white-color;
+
+    &:before {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &.button_inverse {
+      border-color: $accent-color;
+      background-color: transparent;
+      color: $white-color;
+
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  &_cta {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    color: $white-color;
+
+    &:before {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &.button_inverse {
+      border-color: $accent-color;
+      background-color: transparent;
+      color: $white-color;
+
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  &_white {
+    border-color: $white-color;
+    background-color: $white-color;
+    color: $black-color;
+
+    &:before {
+      background-color: $black-color;
+    }
+
+    &:hover {
+      color: $white-color;
+    }
+
+    &.button_inverse {
+      border-color: $white-color;
+      background-color: transparent;
+      color: $white-color;
+
+      &:before {
+        background-color: $white-color;
+      }
+
+      &:hover {
+        color: $black-color;
+      }
+    }
+
+    &.button_link {
+      border-color: transparent;
+      background-color: transparent;
+      color: $white-color;
+
+      &:hover {
+        color: lighten($white-color, 30);
+      }
+    }
+  }
+
+  &_black {
+    border-color: $black-color;
+    background-color: $black-color;
+    color: $white-color;
+
+    &:before {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      color: $black-color;
+    }
+
+    &.button_inverse {
+      border-color: $black-color;
+      background-color: transparent;
+      color: $black-color;
+
+      &:before {
+        background-color: $black-color;
+      }
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+
+    &.button_link {
+      border-color: transparent;
+      background-color: transparent;
+      color: $black-color;
+
+      &:hover {
+        color: lighten($black-color, 30);
+      }
+    }
+  }
+
+  &_lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+  }
+
+  &_sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    &_left {
+
+    }
+
+    &_right {
+      margin-left: .5rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.logo {
+  color: $white-color;
+  &__img {
+    display: block;
+  }
+  &__text {
+    margin: 0;
+  }
+  &__title {
+    font-family: $title-font;
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  &__desc {
+    line-height: 1;
+  }
+}

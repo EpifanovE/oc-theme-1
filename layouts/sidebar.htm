@@ -1,0 +1,20 @@
+{% partial 'site/layout-top' %}
+
+<header class="header">
+    {% partial 'site/top-bar' %}
+    {% partial 'site/menu-bar' %}
+</header>
+
+<div class="container">
+    <div class="row">
+        <main class="col-8">
+            {% page %}
+        </main>
+        <aside class="col-4">
+            SIDEBAR
+        </aside>
+    </div>
+</div>
+
+{% partial 'site/footer' %}
+{% partial 'site/layout-bottom' %}

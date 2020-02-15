@@ -1,0 +1,74 @@
+[viewBag]
+
+[staticMenu]
+code = "main-menu"
+
+[logo]
+show_image = 1
+image_width = 50
+show_title = 1
+show_desc = 1
+h1_on_home_page = 1
+link_to_home_page = 1
+image_microdata = 1
+name_microdata = 1
+
+[contact]
+contact = "none"
+title = "8 (906) 335-69-22"
+show_title = 1
+link = "tel:+79063356922"
+type = "phone"
+icon_class = "fas fa-phone"
+microdata = 1
+
+[contact contact2]
+contact = "none"
+title = "workeev@gmail.com"
+show_title = 1
+link = "mailto:workeev@gmail.com"
+type = "email"
+icon_class = "fas fa-envelope"
+microdata = 1
+==
+<header class="header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex flex-wrap flex-md-nowrap align-items-center">
+                    <div class="top-bar__item">
+                        {% component 'contact' %}
+                    </div>
+                    <div class="top-bar__item">
+                        {% component 'contact2' %}
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
+                    <div class="top-bar__item">
+                        <a href="#" class="button button_cta button_inverse button_sm">
+                            <span class="button__text">
+                                Заказать звонок
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 d-flex align-items-center">
+                    <div class="menu-bar__item">
+                        {% component 'logo' %}
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 d-flex justify-content-md-end align-items-center">
+                    <div class="main-menu menu-bar__item">
+                        {% component 'staticMenu' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
