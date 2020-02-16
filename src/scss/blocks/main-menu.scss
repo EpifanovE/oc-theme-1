@@ -1,0 +1,35 @@
+.main-menu {
+  .menu {
+    &__item {
+      padding: 0 1rem;
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $accent-color;
+        transition: width .3s ease-in-out;
+      }
+
+      &:hover:after {
+        width: 30px;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      padding: .25rem 0;
+      color: $white-color;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    &__item_active .menu__link {
+      color: $accent-color;
+    }
+  }
+}

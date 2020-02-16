@@ -35,7 +35,7 @@ microdata = 1
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 d-flex flex-wrap flex-md-nowrap align-items-center">
+                <div class="col-6 d-none d-md-flex flex-wrap flex-md-nowrap align-items-center">
                     <div class="top-bar__item">
                         {% component 'contact' %}
                     </div>
@@ -43,7 +43,7 @@ microdata = 1
                         {% component 'contact2' %}
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
+                <div class="col-6 d-none d-md-flex justify-content-md-end align-items-center">
                     <div class="top-bar__item">
                         <a href="#" class="button button_cta button_inverse button_sm">
                             <span class="button__text">
@@ -52,20 +52,40 @@ microdata = 1
                         </a>
                     </div>
                 </div>
+                <div class="col-12 d-md-none">
+                    <div class="top-bar__item d-flex justify-content-between">
+                        <a href="#" class="button button_cta button_inverse button_sm">
+                            <i class="fas fa-address-book button__icon button__icon_left"></i>
+                            <span class="button__text">
+                                Контакты
+                            </span>
+                        </a>
+                        <button class="button button_inverse button_white button_sm d-block d-lg-none side-menu-button" data-target="#mobile-menu">
+                            <i class="fas fa-bars button__icon"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="menu-bar">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5 d-flex align-items-center">
+                <div class="col col-md-10 col-lg-5 d-flex align-items-center">
                     <div class="menu-bar__item">
                         {% component 'logo' %}
                     </div>
                 </div>
-                <div class="col-12 col-md-7 d-flex justify-content-md-end align-items-center">
+                <div class="col col-lg-7 d-none d-lg-flex justify-content-end align-items-center">
                     <div class="main-menu menu-bar__item">
                         {% component 'staticMenu' %}
+                    </div>
+                </div>
+                <div class="col col-md-2 d-none d-md-flex d-lg-none align-items-center justify-content-end">
+                    <div class="menu-bar__item d-flex justify-content-end">
+                        <button class="button button_inverse button_white button_sm" data-target="#mobile-menu">
+                            <i class="fas fa-bars button__icon"></i>
+                        </button>
                     </div>
                 </div>
             </div>

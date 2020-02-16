@@ -1,0 +1,21 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<!doctype html>
+<html lang="ru">
+{% partial 'site/head' %}
+<body>
+<div class="wrapper">
+    {% partial 'site/header' %}
+    {% page %}
+    {% partial 'site/footer' %}
+</div>
+
+{% styles %}
+<link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
+{% scripts %}
+{% framework extras %}
+<script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>
+</body>
+</html>

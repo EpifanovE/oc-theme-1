@@ -2,13 +2,11 @@ name: 'Главное меню'
 items:
     -
         title: 'О компании'
-        nesting: ''
-        type: url
-        url: '#about'
+        nesting: '0'
+        type: static-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: about
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''

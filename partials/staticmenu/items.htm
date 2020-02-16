@@ -1,7 +1,7 @@
 {% for item in items if not item.viewBag.isHidden %}
     <li class="menu__item{{ item.isActive ? ' menu__item_active' : '' }}{{ item.isChildActive ? ' menu__item_child-active' : '' }}">
         {% if item.url %}
-            <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' : '' }} class="main-menu__link">
+            <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' : '' }} class="menu__link">
                 {{ item.title }}
             </a>
         {% else %}

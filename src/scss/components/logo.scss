@@ -1,19 +1,33 @@
 .logo {
   color: $white-color;
+  text-decoration: none;
+  transition: opacity .3s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    opacity: .8;
+  }
+
   &__img {
     display: block;
   }
+
   &__text {
     margin: 0;
   }
+
   &__title {
     font-family: $title-font;
     margin-bottom: .25rem;
     text-transform: uppercase;
     line-height: 1;
+    white-space: nowrap;
+
   }
 
   &__desc {
     line-height: 1;
+    color: $white-mute-color;
+    white-space: nowrap;
   }
 }

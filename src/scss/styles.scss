@@ -14,11 +14,17 @@ body {
   font-family: "Open Sans", serif;
 }
 
+.wrapper {
+  position: relative;
+}
+
 @import "blocks/header";
 @import "blocks/top-bar";
 @import "blocks/menu-bar";
 @import "blocks/menu";
 @import "blocks/button";
+@import "blocks/main-menu";
+@import "blocks/hero";
 
 /**
   Components
