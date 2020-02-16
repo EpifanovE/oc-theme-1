@@ -1,0 +1,38 @@
+.opening-hours {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  color: $black-color;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 32px;
+    width: 32px;
+    font-size: 13px;
+    border: 1px solid $accent-color;
+    border-radius: $border-radius;
+    color: $black-color;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__day {
+    margin-right: .5rem;
+    font-weight: bold;
+  }
+
+  &_white {
+    color: $white-color;
+  }
+
+  &_white &__icon {
+    color: $white-color;
+  }
+}

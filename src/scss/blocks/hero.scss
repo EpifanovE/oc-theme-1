@@ -4,7 +4,7 @@
   z-index: 1;
 
   @media (min-width: 1200px) {
-    height: calc(100vh - 117px);
+    height: calc(100vh - 118px);
   }
 
   & .container,
@@ -28,7 +28,7 @@
     content: '';
     display: block;
     position: absolute;
-    background: url('http://eevc.test/storage/app/media/residence-2219972_1920.jpg');
+    background: url('http://eevc.test/storage/app/media/chairs-2181947_1920.jpg');
     background-size: cover;
     top: 0;
     right: 0;
@@ -93,6 +93,6 @@
   }
 
   .main_transparent-header &__content {
-    margin-top: 117px;
+    margin-top: 119px;
   }
 }

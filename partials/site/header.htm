@@ -21,6 +21,7 @@ link = "tel:+79063356922"
 type = "phone"
 icon_class = "fas fa-phone"
 microdata = 1
+adv_class = "contact_white"
 
 [contact contact2]
 contact = "none"
@@ -30,6 +31,7 @@ link = "mailto:workeev@gmail.com"
 type = "email"
 icon_class = "fas fa-envelope"
 microdata = 1
+adv_class = "contact_white"
 ==
 <header class="header">
     <div class="top-bar">
@@ -44,10 +46,13 @@ microdata = 1
                     </div>
                 </div>
                 <div class="col-6 d-none d-md-flex justify-content-md-end align-items-center">
+                <div class="top-bar__item">
+                
+                </div>
                     <div class="top-bar__item">
                         <a href="#" class="button button_cta button_inverse button_sm">
                             <span class="button__text">
-                                Заказать звонок
+                                {{ 'eev.core::lang.get_call'|trans }}
                             </span>
                         </a>
                     </div>
@@ -57,7 +62,7 @@ microdata = 1
                         <a href="#" class="button button_cta button_inverse button_sm">
                             <i class="fas fa-address-book button__icon button__icon_left"></i>
                             <span class="button__text">
-                                Контакты
+                                {{ 'eev.core::lang.contacts'|trans }}
                             </span>
                         </a>
                         <button class="button button_inverse button_white button_sm d-block d-lg-none side-menu-button" data-target="#mobile-menu">
@@ -70,7 +75,7 @@ microdata = 1
     </div>
     <div class="menu-bar">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col col-md-10 col-lg-5 d-flex align-items-center">
                     <div class="menu-bar__item">
                         {% component 'logo' %}

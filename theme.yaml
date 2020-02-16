@@ -4,3 +4,11 @@ author: 'Evgeny Epifanov'
 homepage: 'https://eecode.com'
 code: ''
 require: null
+form:
+  fields:
+    page_title_bg_image:
+      label: Page title background image
+      type: mediafinder
+      mode: image
+      tab: Page
+      imageWidth: 200

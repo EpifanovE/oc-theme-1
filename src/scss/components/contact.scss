@@ -1,12 +1,17 @@
 .contact {
   font-size: 14px;
+
   &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 1rem;
-    padding: .5rem;
+    height: 32px;
+    width: 32px;
     font-size: 13px;
     border: 1px solid $accent-color;
     border-radius: $border-radius;
-    color: $white-color;
+    color: $black-color;
     transition: color .3s ease-in-out;
   }
 
@@ -24,18 +29,34 @@
     display: block;
     font-family: $title-font;
     font-weight: bold;
-    color: $white-color;
+    color: $black-color;
     transition: color .3s ease-in-out;
   }
 
   &__text {
     display: block;
     font-size: 14px;
-    color: $white-mute-color;
+    color: $black-mute-color;
   }
 
   &__link:hover &__title,
   &__link:hover &__icon {
     color: $accent-color;
+  }
+
+  &_white {
+
+  }
+
+  &_white &__icon {
+    color: $white-color;
+  }
+
+  &_white &__title {
+    color: $white-color;
+  }
+
+  &_white &__text {
+    color: $white-mute-color;
   }
 }

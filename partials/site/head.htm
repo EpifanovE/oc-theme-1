@@ -1,3 +1,7 @@
+[viewBag]
+
+[inlineStyles]
+==
 <head>
 {#    {{ dump() }}#}
     <meta charset="utf-8">
@@ -12,5 +16,5 @@
     <!--    <link rel="mask-icon" href="{{ 'assets/images/favicons/safari-pinned-tab.svg'|theme }}" color="#563d7c">-->
     <!--    <link rel="icon" href="{{ 'assets/images/favicons/favicon.ico'|theme }}">-->
     <!--    <meta name="msapplication-config" content="{{ 'assets/images/favicons/browserconfig.xml'|theme }}">-->
-    {{ inlineStyles }}
+    {% component 'inlineStyles' %}
 </head>

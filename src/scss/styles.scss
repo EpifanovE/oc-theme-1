@@ -26,9 +26,14 @@ body {
 @import "blocks/main-menu";
 @import "blocks/main";
 @import "blocks/hero";
+@import "blocks/page-header";
+@import "blocks/breadcrumbs";
 
 /**
   Components
  */
 @import "components/contact";
 @import "components/logo";
+@import "components/address";
+@import "components/opening-hours";
+@import "components/socials";

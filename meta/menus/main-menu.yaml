@@ -1,11 +1,26 @@
 name: 'Главное меню'
 items:
     -
+        title: Главная
+        nesting: ''
+        type: url
+        url: /
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
         title: 'О компании'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: about
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -13,13 +28,9 @@ items:
             isExternal: '0'
     -
         title: Услуги
-        nesting: ''
-        type: url
-        url: '#services'
+        type: cms-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: uslugi
         viewBag:
             isHidden: '0'
             cssClass: ''
