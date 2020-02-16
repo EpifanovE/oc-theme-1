@@ -3448,14 +3448,19 @@ body {
 .main-menu .menu__item_active .menu__link {
   color: #c23616; }
 
+.main {
+  position: relative;
+  z-index: 1; }
+  .main_transparent-header {
+    margin-top: -117px; }
+
 .hero {
   position: relative;
   overflow: hidden;
-  z-index: 1;
-  margin-top: -117px; }
+  z-index: 1; }
   @media (min-width: 1200px) {
     .hero {
-      height: 100vh; } }
+      height: calc(100vh - 117px); } }
   .hero .container,
   .hero .row,
   .hero .col-8 {
@@ -3482,7 +3487,6 @@ body {
     z-index: 1; }
   .hero__content {
     position: relative;
-    margin-top: 117px;
     text-align: center;
     padding: 3rem 0;
     width: 100%;
@@ -3517,6 +3521,11 @@ body {
   .hero__desc {
     margin-bottom: 3rem;
     color: #b2bec3; }
+  @media (min-width: 1200px) {
+    .main_transparent-header .hero {
+      height: 100vh; } }
+  .main_transparent-header .hero__content {
+    margin-top: 117px; }
 
 /**
   Components

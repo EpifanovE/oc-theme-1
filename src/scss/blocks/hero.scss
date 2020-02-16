@@ -2,10 +2,9 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  margin-top: -117px;
 
   @media (min-width: 1200px) {
-    height: 100vh;
+    height: calc(100vh - 117px);
   }
 
   & .container,
@@ -40,7 +39,6 @@
 
   &__content {
     position: relative;
-    margin-top: 117px;
     text-align: center;
     padding: 3rem 0;
     width: 100%;
@@ -86,5 +84,15 @@
   &__desc {
     margin-bottom: 3rem;
     color: $white-mute-color;
+  }
+
+  .main_transparent-header & {
+    @media (min-width: 1200px) {
+      height: 100vh;
+    }
+  }
+
+  .main_transparent-header &__content {
+    margin-top: 117px;
   }
 }
