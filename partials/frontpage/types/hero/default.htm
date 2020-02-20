@@ -1,0 +1,28 @@
+<section class="hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 d-flex align-items-center">
+                <div class="hero__content">
+                    {% if data.title %}
+                    <h2 class="hero__title">
+                        {{ data.title|raw }}
+                    </h2>
+                    {% endif %}
+                    {% if data.text %}
+                    <div class="hero__desc">
+                        {{ data.text|raw }}
+                    </div>
+                    {% endif %}
+                    {% if data.button_text %}
+                    <button class="hero__button button button_cta button_inverse side-menu-button" data-target="#contacts-menu">
+                        <span class="button__text">
+                            {{ data.button_text }}
+                        </span>
+                        <i class="fas fa-arrow-right button__icon button__icon_right"></i>
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
