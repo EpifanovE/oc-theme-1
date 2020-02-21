@@ -3529,34 +3529,15 @@ body {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
 
-.breadcrumbs {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .breadcrumbs__item {
-    margin-right: .5rem;
+.breadcrumbs__item {
+  color: #b2bec3; }
+  .breadcrumbs__item:after {
     color: #b2bec3; }
-    .breadcrumbs__item:after {
-      font-family: Font Awesome\ 5 Free;
-      font-weight: 900;
-      font-size: 12px;
-      content: "\f105";
-      color: #b2bec3; }
-    .breadcrumbs__item:last-child:after {
-      content: none; }
-  .breadcrumbs__link {
-    color: #dfe6e9;
-    text-decoration: none;
-    -webkit-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
-    margin-right: .5rem; }
-    .breadcrumbs__link:hover {
-      color: #c23616; }
+
+.breadcrumbs__link {
+  color: #dfe6e9; }
+  .breadcrumbs__link:hover {
+    color: #c23616; }
 
 /**
   Components
