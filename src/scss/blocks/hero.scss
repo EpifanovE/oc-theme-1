@@ -1,60 +1,9 @@
 .hero {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  @media (min-width: 1200px) {
-    height: calc(100vh - 118px);
-  }
-
-  & .container,
-  & .row,
-  & .col-8 {
-    height: 100%;
-  }
-
   &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background: rgba($bg-color, .85);
-    z-index: 2;
   }
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  &__content {
-    position: relative;
-    text-align: center;
-    padding: 3rem 0;
-    width: 100%;
-    z-index: 3;
-
-    @media (min-width: 1200px) {
-      padding: 0;
-    }
-  }
-
   &__title {
     font-family: $title-font;
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 0;
     text-shadow: 0 0 27px rgba($black-color, .7);
     color: $white-color;
 
@@ -63,35 +12,11 @@
     }
 
     &:after {
-      content: '';
-      display: block;
-      width: 100px;
-      height: 1px;
       background-color: $accent-color;
-      margin: 2rem auto;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
-
-    @media (min-width: 1200px) {
-      font-size: 2.75rem;
     }
   }
 
   &__desc {
-    margin-bottom: 3rem;
     color: $white-mute-color;
-  }
-
-  .main_transparent-header & {
-    @media (min-width: 1200px) {
-      height: 100vh;
-    }
-  }
-
-  .main_transparent-header &__content {
-    margin-top: 119px;
   }
 }
