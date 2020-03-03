@@ -3459,7 +3459,7 @@ body {
   position: relative;
   z-index: 1; }
   .main_transparent-header {
-    margin-top: -119px; }
+    margin-top: -123px; }
 
 .hero:before {
   background: rgba(0, 0, 0, 0.85); }
@@ -3504,8 +3504,8 @@ body {
     left: 0;
     z-index: 1; }
   .page-header_transparent-header {
-    margin-top: -119px;
-    padding-top: 119px;
+    margin-top: -123px;
+    padding-top: 123px;
     height: 262px; }
     @media (min-width: 1024px) {
       .page-header_transparent-header {

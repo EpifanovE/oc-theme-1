@@ -28,22 +28,24 @@ items:
             isExternal: '0'
     -
         title: Услуги
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: uslugi
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Контакты
-        nesting: ''
-        type: url
-        url: '#contacts'
+        nesting: '0'
+        type: static-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: contacts
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''

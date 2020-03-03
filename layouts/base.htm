@@ -1,3 +1,9 @@
+[popup]
+popup = "popup1"
+
+[form]
+form = "cb"
+==
 <!doctype html>
 <html lang="ru">
 {% partial 'site/head' %}
@@ -14,6 +20,6 @@
 <link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
 {% scripts %}
 {% framework extras %}
-<script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>
+<script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>{% component 'popup' %}
 </body>
 </html>
