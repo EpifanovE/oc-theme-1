@@ -1,0 +1,64 @@
+.hero {
+
+  @media (min-width: 1200px) {
+    height: calc(100vh - 123px);
+  }
+
+  &:before {
+    background: rgba($bg-color, .85);
+  }
+
+  &__content {
+    padding: 3rem 0;
+
+    @media (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0 0 27px rgba(#000000, .7);
+    color: #ffffff;
+    font-family: $title-font;
+
+    & strong {
+      color: $accent-color;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: $accent-color;
+      margin: 2rem auto;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2.75rem;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 3rem;
+    color: $white-mute-color;
+  }
+
+  .main_transparent-header & {
+    @media (min-width: 1200px) {
+      height: 100vh;
+    }
+  }
+
+  .main_transparent-header &__content {
+    margin-top: 123px;
+  }
+}

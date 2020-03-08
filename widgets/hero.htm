@@ -1,0 +1,33 @@
+<section class="hero{{ classes }}">
+    {% for key, slide in data.slides %}
+    <div class="hero__item" id="hero-slide-{{ key }}">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 d-flex align-items-center">
+                    <div class="hero__content">
+                        {% if slide.title %}
+                        <h2 class="hero__title">
+                            {{ slide.title|raw }}
+                        </h2>
+                        {% endif %}
+                        {% if slide.text %}
+                        <div class="hero__desc">
+                            {{ slide.text|raw }}
+                        </div>
+                        {% endif %}
+                        {% if slide.button_text %}
+                        <a class="hero__button button button_cta button_inverse{{ slide.button_class ? ' ' ~ slide.button_class : '' }}" href="{{ slide.button_link }}">
+                            <span class="button__text">
+                                {{ slide.button_text }}
+                            </span>
+                            <i class="fas fa-arrow-right button__icon button__icon_right"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
