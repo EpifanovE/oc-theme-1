@@ -11,7 +11,7 @@
         display: block;
         width: 0;
         height: 2px;
-        background-color: $accent-color;
+        background-color: var(--accent-color);;
         transition: width .3s ease-in-out;
       }
 
@@ -29,7 +29,7 @@
     }
 
     &__item_active .menu__link {
-      color: $accent-color;
+      color: var(--accent-color);;
     }
   }
 }

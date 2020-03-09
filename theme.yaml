@@ -7,6 +7,10 @@ require: null
 form:
   tabs:
     fields:
+      accent_color:
+        label: Accent color
+        type: colorpicker
+        tab: Theme
       page_title_bg_image:
         label: Page title background image
         type: mediafinder
