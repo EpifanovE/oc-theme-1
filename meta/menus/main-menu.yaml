@@ -43,8 +43,10 @@ items:
         title: Контакты
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: contacts
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -59,6 +61,15 @@ items:
         reference: ''
         cmsPage: ''
         replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Преимущества
+        type: url
+        url: '#about-1'
+        code: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

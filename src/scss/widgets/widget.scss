@@ -1,0 +1,111 @@
+.widget {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__body {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $overlay-color;
+    z-index: 1;
+  }
+
+  &_front-page {
+    padding: 2rem 0;
+    @media (min-width: 1024px) {
+      padding: 5rem 0;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: $black-color;
+    font-family: $title-font;
+    margin-top: 0;
+
+    & strong {
+      color: var(--accent-color);
+    }
+  }
+
+  &__subtitle {
+    & p:first-child {
+      margin-top: 0;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_front-page &__header,
+  &_front-page &__content {
+    margin-bottom: 5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_front-page &__title {
+    font-size: 1.75rem;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: var(--accent-color);
+      margin: 1rem 0;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2rem;
+
+      &:after {
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  &_dark {
+    color: $white-mute-color;
+  }
+
+  &_dark &__title {
+    color: $white-color;
+  }
+
+
+  &__button {
+    border-color: $black-color;
+    background-color: transparent;
+    color: $black-color;
+
+    &:hover {
+      color: $white-color;
+      background-color: $black-color;
+    }
+  }
+
+  &_dark &__button {
+    border-color: $white-color;
+    background-color: transparent;
+    color: $white-color;
+
+    &:hover {
+      color: $black-color;
+      background-color: $white-color;
+    }
+  }
+}

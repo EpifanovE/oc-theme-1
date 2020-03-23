@@ -5,12 +5,24 @@ is_hidden = 0
 
 [widget]
 widget = 1
+title_tag = "h2"
+container_width = "container"
 
 [widget widget2]
 widget = 2
+adv_class = "widget_front-page"
+title_tag = "h2"
+container_width = "container"
 
 [widget widget3]
 widget = 3
+adv_class = "widget_front-page widget_dark"
+anchor_name = "about"
+id = "about-1"
+title_tag = "h3"
+container_width = "container"
+cols = 2
+card_template = "horizontal"
 ==
 {% component 'widget' %}
 {% component 'widget2' %}

@@ -1,83 +1,66 @@
 .button {
   display: inline-block;
-  color: #212529;
-  background-color: transparent;
-  border: 1px solid transparent;
+  color: $white-color;
+  background-color: $black-color;
+  border: 1px solid $black-color;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
-  &:before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: -100%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    transition: left .3s ease-in-out;
-    z-index: 1;
-  }
-
-  &_link:before {
-    content: none;
-  }
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out,box-shadow .3s ease-in-out;
 
   &:hover {
-    &:before {
-      left: 0;
-    }
+    color: $black-color;
+    background-color: transparent;
   }
 
   &_accent {
-    border-color: var(--accent-color);;
-    background-color: var(--accent-color);;
+    border-color: $accent-color;
+    border-color: var(--accent-color);
+    background-color: $accent-color;
+    background-color: var(--accent-color);
     color: $white-color;
 
-    &:before {
+    &:hover {
+      color: $accent-color;
+      color: var(--accent-color);
       background-color: $white-color;
     }
 
-    &:hover {
-      color: var(--accent-color);;
-    }
-
     &.button_inverse {
-      border-color: var(--accent-color);;
+      border-color: $accent-color;
+      border-color: var(--accent-color);
       background-color: transparent;
       color: $white-color;
 
-      position: relative;
-      overflow: hidden;
-
-      &:before {
-        background-color: var(--accent-color);;
+      &:hover {
+        color: $white-color;
+        background-color: $accent-color;
+        background-color: var(--accent-color);
       }
     }
   }
 
   &_cta {
-    border-color: var(--accent-color);;
-    background-color: var(--accent-color);;
+    border-color: $accent-color;
+    border-color: var(--accent-color);
+    background-color: $accent-color;
+    background-color: var(--accent-color);
     color: $white-color;
 
-    &:before {
+    &:hover {
+      color: $accent-color;
+      color: var(--accent-color);
       background-color: $white-color;
     }
 
-    &:hover {
-      color: var(--accent-color);;
-    }
-
     &.button_inverse {
-      border-color: var(--accent-color);;
+      border-color: $accent-color;
+      border-color: var(--accent-color);
       background-color: transparent;
       color: $white-color;
 
-      position: relative;
-      overflow: hidden;
-
-      &:before {
-        background-color: var(--accent-color);;
+      &:hover {
+        color: $white-color;
+        background-color: $accent-color;
+        background-color: var(--accent-color);
       }
     }
   }
@@ -87,12 +70,9 @@
     background-color: $white-color;
     color: $black-color;
 
-    &:before {
-      background-color: $black-color;
-    }
-
     &:hover {
       color: $white-color;
+      background-color: transparent;
     }
 
     &.button_inverse {
@@ -100,12 +80,9 @@
       background-color: transparent;
       color: $white-color;
 
-      &:before {
-        background-color: $white-color;
-      }
-
       &:hover {
         color: $black-color;
+        background-color: $white-color;
       }
     }
 
@@ -125,12 +102,9 @@
     background-color: $black-color;
     color: $white-color;
 
-    &:before {
-      background-color: $white-color;
-    }
-
     &:hover {
       color: $black-color;
+      background-color: transparent;
     }
 
     &.button_inverse {
@@ -138,12 +112,9 @@
       background-color: transparent;
       color: $black-color;
 
-      &:before {
-        background-color: $black-color;
-      }
-
       &:hover {
         color: $white-color;
+        background-color: $black-color;
       }
     }
 
@@ -158,34 +129,4 @@
     }
   }
 
-  &_lg {
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
-  }
-
-  &_sm {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-  }
-
-  &__text {
-    position: relative;
-    z-index: 2;
-  }
-
-  &__icon {
-    position: relative;
-    z-index: 2;
-    &_left {
-      margin-right: .5rem;
-    }
-
-    &_right {
-      margin-left: .5rem;
-    }
-  }
 }

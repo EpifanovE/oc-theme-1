@@ -27,6 +27,7 @@ body {
 @import "blocks/main";
 @import "blocks/page-header";
 @import "blocks/breadcrumbs";
+@import "blocks/icon-card";
 
 /**
   Components
@@ -40,5 +41,7 @@ body {
 /**
  Widgets
  */
+@import "widgets/widget";
 @import "widgets/hero";
 @import "widgets/about";
+@import "widgets/icon-cards";

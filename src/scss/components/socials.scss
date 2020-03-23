@@ -21,7 +21,8 @@
     height: 32px;
     width: 32px;
     font-size: 13px;
-    border: 1px solid var(--accent-color);;
+    border: 1px solid $accent-color;
+    border: 1px solid var(--accent-color);
     border-radius: $border-radius;
     color: $black-color;
     transition: color .3s ease-in-out;
@@ -47,7 +48,8 @@
 
   &__link:hover &__icon,
   &__link:hover {
-    color: var(--accent-color);;
+    color: $accent-color;
+    color: var(--accent-color);
   }
 
 
