@@ -1,0 +1,17 @@
+.form-field {
+
+  &__input {
+    &::placeholder {
+      color: $white-mute-color;
+    }
+  }
+
+  &_checkbox &__input:checked ~ &__label::before,
+  &_radio &__input:checked ~ &__label::before {
+    color: #fff;
+    border-color: $accent-color;
+    border-color: var(--accent-color);
+    background-color: $accent-color;
+    background-color: var(--accent-color);
+  }
+}

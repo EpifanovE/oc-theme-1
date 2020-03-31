@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", serif;
+  color: $black-mute-color;
 }
 
 .wrapper {
@@ -28,10 +29,14 @@ body {
 @import "blocks/page-header";
 @import "blocks/breadcrumbs";
 @import "blocks/icon-card";
+@import "blocks/gallery-item";
+@import "blocks/top-button";
 
 /**
   Components
  */
+@import "components/form";
+@import "components/form-field";
 @import "components/contact";
 @import "components/logo";
 @import "components/address";
@@ -45,3 +50,4 @@ body {
 @import "widgets/hero";
 @import "widgets/about";
 @import "widgets/icon-cards";
+@import "widgets/widget-cta";

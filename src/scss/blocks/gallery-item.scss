@@ -1,0 +1,46 @@
+.gallery-item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%;
+
+  &__inside {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+  }
+
+  &__icon {
+    color: $white-color;
+    font-size: 2rem;
+  }
+}

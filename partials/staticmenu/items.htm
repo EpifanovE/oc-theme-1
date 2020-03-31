@@ -1,5 +1,7 @@
 {% for item in items if not item.viewBag.isHidden %}
-    <li class="menu__item{{ item.isActive ? ' menu__item_active' : '' }}{{ item.isChildActive ? ' menu__item_child-active' : '' }}">
+
+{% if not item.viewBag.isHidden %}
+    <li class="menu__item{{ item.isActive ? ' menu__item_active' : '' }}{{ item.isChildActive ? ' menu__item_child-active' : '' }}{{ item.items ? ' menu__item_dropdown' : ''}}{{ item.viewBag.cssClass ? ' ' ~ item.viewBag.cssClass : ''}}"{{ item.viewBag.isExternal ? ' target="_blank"' : ''}}>
         {% if item.url %}
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' : '' }} class="menu__link">
                 {{ item.title }}
@@ -12,4 +14,5 @@
             <ul class="menu__sub-menu">{% partial __SELF__ ~ "::items" items=item.items %}</ul>
         {% endif %}
     </li>
+{% endif %}
 {% endfor %}

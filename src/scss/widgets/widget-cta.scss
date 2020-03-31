@@ -1,0 +1,23 @@
+.widget-cta {
+  text-align: center;
+  &__title {
+    color: $white-color;
+    margin: 0 0 1rem 0;
+    font-family: $title-font;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: var(--accent-color);
+      margin: 2rem auto 0 auto;
+    }
+  }
+
+  &__content {
+    margin-bottom: 1rem;
+  }
+}
