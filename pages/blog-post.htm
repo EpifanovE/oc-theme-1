@@ -1,0 +1,19 @@
+title = "Запись блога"
+url = "/blog/:slug"
+layout = "sidebar"
+meta_title = "asdf"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog-post"
+==
+{% component 'blogPost' %}
+
+{% put title %}
+{{ post.title }}
+{% endput %}
+
+{% put meta_title %}
+{{ (post.seo_title ? post.seo_title : post.title) ~ ' - Блог ' }}
+{% endput %}

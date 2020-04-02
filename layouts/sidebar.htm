@@ -1,20 +1,28 @@
-{% partial 'site/layout-top' %}
-
-<header class="header">
-    {% partial 'site/top-bar' %}
-    {% partial 'site/menu-bar' %}
-</header>
-
-<div class="container">
-    <div class="row">
-        <main class="col-8">
-            {% page %}
-        </main>
-        <aside class="col-4">
-            SIDEBAR
-        </aside>
+==
+<!doctype html>
+<html lang="ru">
+{% partial 'site/head' %}
+<body>
+<div class="wrapper">
+    {% partial 'site/header' %}
+    {% partial 'site/page-header' %}
+    <div class="container">
+        <div class="row">
+            <main class="main col-12 col-lg-9">
+                {% page %}
+            </main>
+            <aside class="sidebar col-12 col-lg-3">
+                SIDEBAR
+            </aside>
+        </div>
     </div>
+    {% partial 'site/footer' %}
 </div>
 
-{% partial 'site/footer' %}
-{% partial 'site/layout-bottom' %}
+{% styles %}
+<link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
+{% scripts %}
+{% framework extras %}
+<script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>
+</body>
+</html>

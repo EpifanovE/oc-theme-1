@@ -8,7 +8,9 @@ adv_class = "page-header__breadcrumbs"
         <div class="row">
             <div class="col-12 page-header__content d-flex align-items-center align-content-center flex-wrap">
                 <h1 class="page-title page-header__title">
-                    {{ this.page.title }}
+                    {% placeholder title default %}
+                        {{ this.page.title }}
+                    {% endplaceholder %}
                 </h1>
                 {% component 'breadcrumbs' %}
             </div>
