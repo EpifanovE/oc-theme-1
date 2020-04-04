@@ -29,9 +29,13 @@ items:
         items:
             -
                 title: История
+                nesting: ''
                 type: url
                 url: '#'
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -51,9 +55,13 @@ items:
                     isExternal: '0'
             -
                 title: 'Новый пункт'
+                nesting: ''
                 type: url
                 url: '#'
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -99,42 +107,51 @@ items:
                     cssClass: ''
                     isExternal: '0'
     -
-        title: Услуги
-        type: cms-page
+        title: Блог
+        nesting: '1'
+        type: all-blog-categories
         code: ''
-        reference: uslugi
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
-        title: Контакты
-        nesting: '0'
-        type: static-page
-        url: ''
-        code: ''
-        reference: contacts
-        cmsPage: ''
+        cmsPage: blog-category
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Блог
-        type: url
-        url: '#blog'
-        code: ''
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
         title: Преимущества
+        nesting: ''
         type: url
         url: '#about-1'
         code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: scroll
+            isExternal: '0'
+        items:
+            -
+                title: Категории
+                nesting: '1'
+                type: all-blog-categories
+                code: ''
+                cmsPage: blog-category
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Услуги
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: uslugi
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
             isExternal: '0'

@@ -1,14 +1,15 @@
 title = "Блог"
-url = "/blog/:page?"
+url = "/blog"
 layout = "sidebar"
 is_hidden = 0
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = ":slug"
 postsPerPage = 10
 noPostsMessage = "Записей не найдено"
-categoryPage = "blog"
-postPage = "blog"
+sortOrder = "created_at asc"
+categoryPage = "blog-category"
+postPage = "blog-post"
+exceptPost = 5
 ==
 {% component 'blogPosts' %}
