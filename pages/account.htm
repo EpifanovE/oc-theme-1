@@ -1,0 +1,11 @@
+title = "Аккаунт"
+url = "/account/:code?"
+layout = "sidebar"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+forceSecure = 0
+==
+{% component 'account' %}
