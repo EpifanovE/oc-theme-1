@@ -12,7 +12,7 @@
                 {% page %}
             </main>
             <aside class="sidebar col-12 col-lg-3">
-                SIDEBAR
+                {% placeholder sidebar %}
             </aside>
         </div>
     </div>
@@ -24,5 +24,8 @@
 {% scripts %}
 {% framework extras %}
 <script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>
+<a href="#header" class="top-button scroll" id="top-button">
+    <i class="fas fa-chevron-up"></i>
+</a>
 </body>
 </html>

@@ -7,8 +7,14 @@ is_hidden = 0
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog-category"
+tagPage = "blog-tag"
+
+[staticMenu sideMenu]
+code = "side-menu"
 ==
-{% component 'blogPost' %}
+<div class="main__content">
+    {% component 'blogPost' %}
+</div>
 
 {% put title %}
 {{ post.title }}
@@ -16,4 +22,17 @@ categoryPage = "blog-category"
 
 {% put meta_title %}
 {{ (post.seo_title ? post.seo_title : post.title) ~ ' - Блог ' }}
+{% endput %}
+
+{% put sidebar %}
+<div class="side-menu widget widget_sidebar">
+    <div class="widget__header">
+        <h3 class="widget__title">
+        Категории
+        </h3>
+    </div>
+    <div class="widget__body">
+        {% component 'sideMenu' %}
+    </div>
+</div>
 {% endput %}
