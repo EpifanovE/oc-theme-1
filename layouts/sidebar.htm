@@ -1,3 +1,5 @@
+[form]
+form = "cb"
 ==
 <!doctype html>
 <html lang="ru">
@@ -20,14 +22,6 @@
     </div>
     {% partial 'site/footer' %}
 </div>
-
-{% styles %}
-<link href="{{ 'assets/css/styles.min.css'|theme }}" rel="stylesheet">
-{% scripts %}
-{% framework extras %}
-<script src="{{ 'assets/js/scripts.min.js'|theme }}"></script>
-<a href="#header" class="top-button scroll" id="top-button">
-    <i class="fas fa-chevron-up"></i>
-</a>
+{% partial 'site/footer-content' %}
 </body>
 </html>
