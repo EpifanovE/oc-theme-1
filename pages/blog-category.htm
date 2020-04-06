@@ -14,14 +14,5 @@ postPage = "blog-post"
 {% component 'blogPosts' %}
 
 {% put sidebar %}
-<div class="side-menu widget widget_sidebar">
-    <div class="widget__header">
-        <h3 class="widget__title">
-        Категории
-        </h3>
-    </div>
-    <div class="widget__body">
-        {% component 'staticMenu' %}
-    </div>
-</div>
+{% partial 'site/blog-sidebar' %}
 {% endput %}
